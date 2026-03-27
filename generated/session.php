@@ -149,7 +149,7 @@ function session_encode(): string
  * @throws SessionException
  *
  */
-function session_id(string $id = null): string
+function session_id(?string $id = null): string
 {
     error_clear_last();
     if ($id !== null) {

@@ -266,7 +266,7 @@ function ibase_commit($link_or_trans_identifier = null): void
  * @throws IbaseException
  *
  */
-function ibase_connect(string $database = null, string $username = null, ?string $password = null, ?string $charset = null, ?int $buffers = null, ?int $dialect = null, ?string $role = null, ?int $sync = null)
+function ibase_connect(?string $database = null, ?string $username = null, ?string $password = null, ?string $charset = null, ?int $buffers = null, ?int $dialect = null, ?string $role = null, ?int $sync = null)
 {
     error_clear_last();
     if ($sync !== null) {

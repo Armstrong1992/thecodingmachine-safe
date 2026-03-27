@@ -867,7 +867,7 @@ function openssl_pkcs7_read(string $data, ?array &$certificates): void
  * @throws OpensslException
  *
  */
-function openssl_pkcs7_sign(string $input_filename, string $output_filename, $certificate, $private_key, array $headers, int $flags = PKCS7_DETACHED, string $untrusted_certificates_filename = null): void
+function openssl_pkcs7_sign(string $input_filename, string $output_filename, $certificate, $private_key, array $headers, int $flags = PKCS7_DETACHED, ?string $untrusted_certificates_filename = null): void
 {
     error_clear_last();
     if ($untrusted_certificates_filename !== null) {
