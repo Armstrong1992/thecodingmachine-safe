@@ -319,7 +319,7 @@ function date_sun_info(int $timestamp, float $latitude, float $longitude): array
  * @throws DatetimeException
  *
  */
-function date_sunrise(int $timestamp, int $returnFormat = SUNFUNCS_RET_STRING, float $latitude = null, float $longitude = null, float $zenith = null, float $utcOffset = null)
+function date_sunrise(int $timestamp, int $returnFormat = SUNFUNCS_RET_STRING, ?float $latitude = null, ?float $longitude = null, ?float $zenith = null, ?float $utcOffset = null)
 {
     error_clear_last();
     if ($utcOffset !== null) {
